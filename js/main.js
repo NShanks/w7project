@@ -31,14 +31,14 @@ button.addEventListener('click', function(){
         let tempValue = toF(data['main']['temp'])
         let highValue = toF(data['main']['temp_max'])
         let lowValue = toF(data['main']['temp_min'])
-        let forecastValue
+        // let forecastValue
         let humidityValue = data['main']['humidity']
 
         city.innerHTML = "Welcome to " + nameValue;
         temperature.innerHTML = "The temperature is " + tempValue;
         high.innerHTML = "The high is " + highValue;
         low.innerHTML = "The low is " + lowValue;
-        forecast.innerHTML = "The forecast? rn is " + forecastValue;
+        // forecast.innerHTML = "The forecast? rn is " + forecastValue;
         humidity.innerHTML = "The humidity is " + humidityValue + '%';
     })
 })
@@ -50,13 +50,13 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&app
         let tempValue = toF(data['main']['temp'])
         let highValue = toF(data['main']['temp_max'])
         let lowValue = toF(data['main']['temp_min'])
-        let forecastValue
+        // let forecastValue
         let humidityValue = data['main']['humidity']
 
         city.innerHTML = "Welcome to " + nameValue;
         temperature.innerHTML = "The temperature is " + tempValue;
         high.innerHTML = "The high is " + highValue;
         low.innerHTML = "The low is " + lowValue;
-        forecast.innerHTML = "The forecast? rn is " + forecastValue;
+        // forecast.innerHTML = "The forecast? rn is " + forecastValue;
         humidity.innerHTML = "The humidity is " + humidityValue + '%';
     })
